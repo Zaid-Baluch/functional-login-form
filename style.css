@@ -1,0 +1,135 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+#main {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+  background-color: #002062;
+  border-radius: 10px;
+  color: white;
+  height: 100vh;
+}
+#logo img {
+  margin-top: 2rem;
+  display: flex;
+  justify-self: center;
+}
+#loginform {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  width: 100%;
+}
+#form input {
+  height: 2rem;
+  border: none;
+  background-color: #0f2d6b;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 0;
+  color: white;
+  outline: none;
+  font-size: medium;
+}
+.inputs {
+  background-color: #0f2d6b;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+#input h1 {
+  color: white;
+  font-size: larger;
+  text-align: center;
+}
+#input p {
+  color: white;
+  font-size: small;
+  margin-top: 0;
+  align-self: flex-end;
+}
+#signin {
+  background-color: rgb(86, 86, 216);
+  color: white;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+#social {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  text-align: center;
+  row-gap: 20px;
+}
+#social button {
+  border-radius: 5px;
+  border: none;
+  padding: 0.2rem;
+  width: 100%;
+  gap: 1.1rem;
+  background-color: #0f2d6b;
+  color: white;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#social p {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+#social a {
+  text-decoration: none;
+  color: rgb(97, 97, 244);
+}
+#social fieldset {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  align-items: center;
+
+  /* border-color: gray; */
+}
+#img {
+  width: 60%;
+}
+#img img {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* mobile screen */
+@media screen and (max-width: 768px) {
+  #main {
+    height: 100%;
+    margin: 2rem;
+  }
+  #loginform {
+    width: 100%;
+  }
+  #img {
+    display: none;
+  }
+}
